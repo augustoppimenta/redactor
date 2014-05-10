@@ -1,4 +1,5 @@
 Redactor::Application.routes.draw do
+  mount RedactorRails::Engine => '/redactor_rails'
   resources :articles
 
   # The priority is based upon order of creation: first created -> highest priority.
